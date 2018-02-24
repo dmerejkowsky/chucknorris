@@ -1,0 +1,5 @@
+[requires]
+sqlite3/3.21.0@bincrafters/stable
+
+[generators]
+cmake
