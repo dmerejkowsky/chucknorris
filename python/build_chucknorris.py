@@ -1,6 +1,5 @@
-import os
-import sys
 import json
+import sys
 
 import path
 from cffi import FFI
@@ -22,6 +21,10 @@ for dep in conan_info["dependencies"]:
             if candidate.exists():
                 libs.append(candidate)
 
+additional_libs = list()
+if sys.platform == "linux":
+    additional_libs.append("stdc++")
+
 ffibuilder.set_source(
     "_chucknorris",
     """
@@ -29,6 +32,7 @@ ffibuilder.set_source(
 
     """,
     extra_objects=libs,
+    libraries=additional_libs,
     include_dirs=["../cpp/include"],
 )
 
