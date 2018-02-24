@@ -9,6 +9,7 @@ if (WIN32 AND MSVC AND BUILD_SHARED_LIBS)
 endif(MSVC AND BUILD_SHARED_LIBS)
 
 add_library(sqlite3 sources/sqlite3.c)
+target_include_directories(sqlite3 PUBLIC "sources")
 
 # Add some options from https://sqlite.org/compile.html
 option(ENABLE_JSON1 "Enable JSON SQL functions")

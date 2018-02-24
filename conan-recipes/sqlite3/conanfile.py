@@ -25,7 +25,7 @@ class ConanSqlite3(ConanFile):
         del self.settings.compiler.libcxx
 
     def source(self):
-        base_url = "https://www.sqlite.org/" + self.year
+        base_url = "https://dmerej.info/pub/" + self.year
         archive_name = "sqlite-amalgamation-" + self.version.replace(".","") + "000"
         archive_ext = "zip"
         download_url = "{0}/{1}.{2}".format(base_url, archive_name, archive_ext)
