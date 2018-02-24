@@ -3,6 +3,11 @@
 
 #include <chucknorris.hpp>
 
+
+const char* chuck_norris_version() {
+  return CHUCK_NORRIS_VERSION;
+}
+
 chuck_norris_t* chuck_norris_init()
 {
   return new ChuckNorris();
