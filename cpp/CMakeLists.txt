@@ -9,7 +9,9 @@ conan_basic_setup(TARGETS)
 
 add_library(chucknorris
   include/chucknorris.hpp
+  include/chucknorris.h
   src/chucknorris.cpp
+  src/c_wrapper.cpp
 )
 
 target_link_libraries(chucknorris
@@ -23,8 +25,14 @@ target_include_directories(
     "include"
 )
 
-add_executable(demo
+add_executable(cpp_demo
   src/main.cpp
 )
 
-target_link_libraries(demo chucknorris)
+target_link_libraries(cpp_demo chucknorris)
+
+add_executable(c_demo
+  src/main.c
+)
+
+target_link_libraries(c_demo chucknorris)
