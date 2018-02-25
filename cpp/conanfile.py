@@ -21,7 +21,10 @@ class ChucknorrisConan(ConanFile):
 
     def build(self):
         cmake = CMake(self)
-        cmake.configure()
+        cmade_definitions = {}
+        if self.options.shared:
+            cmade_definitions["BUILD_SHARED_LIBS"] = "ON"
+        cmake.configure(defs=cmade_definitions)
         cmake.build(args=["--", "-v"])
 
     def package(self):
