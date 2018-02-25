@@ -17,7 +17,7 @@ class ChucknorrisConan(ConanFile):
     def build(self):
         cmake = CMake(self)
         cmake.configure()
-        cmake.build()
+        cmake.build(args=["--", "-v"])
 
     def package(self):
         cmake = CMake(self)
