@@ -22,5 +22,7 @@ public class ChuckNorrisInstrumentedTest {
     @Test
     public  void instantiateLib() throws Exception {
         ChuckNorrisLib lib = new ChuckNorrisLib();
+        String version = lib.getVersion();
+        assertEquals("0.1", version);
     }
 }
