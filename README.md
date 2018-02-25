@@ -1,7 +1,15 @@
-# C++ for mobile example
+# ChuckNorris
 
-This repository contains source code for two mobile applications,
-both using a library written in `C++` depending on `sqlite3`
+This repository contains a library written in `c++` that depends on `sqlite3`
 
-It serves as an example on how to build such applications, without
-pulling your hair out ...
+It also contains:
+
+* wrappers for the following langages:
+  * `C`
+  * `Java`  (with `jna`)
+  * `Python3` (with `cffi`)
+
+* an Android application
+* an iOS application
+
+* and all the scripts you need to build everything without pull your hair out :)
