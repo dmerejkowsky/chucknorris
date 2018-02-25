@@ -14,6 +14,11 @@ class ChucknorrisConan(ConanFile):
     exports_sources = "CMakeLists.txt", "src/*", "include/*"
     requires = "sqlite3/3.21.0@dmerej/test"
 
+    def configure(self):
+        # TODO: ask theo why
+        # taken fro sqlite3 recipe
+        del self.settings.compiler.libcxx
+
     def build(self):
         cmake = CMake(self)
         cmake.configure()
