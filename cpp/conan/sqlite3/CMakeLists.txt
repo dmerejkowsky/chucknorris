@@ -23,4 +23,6 @@ add_executable(cpp_test
 
 target_link_libraries(cpp_test
     sqlite3
+    pthread
+    dl
 )
