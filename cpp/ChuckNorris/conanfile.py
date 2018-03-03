@@ -10,7 +10,7 @@ class ChucknorrisConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False]}
     default_options = "shared=False"
-    generators = "cmake"
+    generators = "cmake", "json"
     exports_sources = "CMakeLists.txt", "src/*", "include/*"
     requires = "sqlite3/3.21.0@dmerej/test"
 
