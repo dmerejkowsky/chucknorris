@@ -1,4 +1,4 @@
-#include <chucknorris.hpp>
+#include <ChuckNorris.hpp>
 
 #include <stdexcept>
 #include <iostream>

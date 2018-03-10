@@ -1,4 +1,4 @@
-#include <chucknorris.h>
+#include <ChuckNorris.h>
 #include <cstring>
 
 #include <chucknorris.hpp>

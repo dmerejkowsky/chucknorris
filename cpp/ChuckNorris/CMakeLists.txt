@@ -8,9 +8,9 @@ include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup(TARGETS)
 
 add_library(chucknorris
-  include/chucknorris.hpp
+  include/ChuckNorris.hpp
   include/chucknorris.h
-  src/chucknorris.cpp
+  src/ChuckNorris.cpp
   src/c_wrapper.cpp
 )
 

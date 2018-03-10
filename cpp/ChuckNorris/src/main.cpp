@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include <chucknorris.hpp>
+#include <ChuckNorris.hpp>
 
 int main()
 {
