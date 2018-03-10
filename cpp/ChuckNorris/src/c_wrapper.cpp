@@ -1,7 +1,7 @@
-#include <ChuckNorris.h>
+#include <chucknorris.h>
 #include <cstring>
 
-#include <chucknorris.hpp>
+#include <ChuckNorris.hpp>
 
 
 const char* chuck_norris_version() {
