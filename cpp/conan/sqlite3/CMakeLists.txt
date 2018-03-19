@@ -16,11 +16,3 @@ option(ENABLE_JSON1 "Enable JSON SQL functions")
 if(ENABLE_JSON1)
     target_compile_definitions(sqlite3 PRIVATE SQLITE_ENABLE_JSON1)
 endif()
-
-add_executable(cpp_test
-    test.cpp
-)
-
-target_link_libraries(cpp_test
-    sqlite3
-)
