@@ -49,9 +49,7 @@ ChuckNorris::ChuckNorris()
 
 ChuckNorris::~ChuckNorris()
 {
-  if (_db) {
-    sqlite3_close(_db);
-  }
+  sqlite3_close(_db);
 }
 
 std::string ChuckNorris::getFact()
