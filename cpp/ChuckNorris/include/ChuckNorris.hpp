@@ -8,9 +8,9 @@ class ChuckNorris
 {
   public:
     ChuckNorris();
+    ~ChuckNorris();
     std::string getFact();
 
-    virtual ~ChuckNorris();
 
   private:
     sqlite3* _db;
