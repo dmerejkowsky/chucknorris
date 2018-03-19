@@ -66,11 +66,13 @@ std::string ChuckNorris::getFact()
       throw std::runtime_error("Failed to get fact: " + message);
   }
   rc = sqlite3_step(statement);
-  if (rc == SQLITE_ROW) {
-    auto sqlite_row = sqlite3_column_text(statement, 0);
-    auto row = reinterpret_cast<const char*>(sqlite_row);
-    return std::string(row);
-  } else {
+  if (rc != SQLITE_ROW) {
+    sqlite3_finalize(statement);
     throw std::runtime_error("Expected SQLITE_ROW, got: " + std::to_string(rc));
   }
+  auto sqlite_row = sqlite3_column_text(statement, 0);
+  auto row = reinterpret_cast<const char*>(sqlite_row);
+  auto res = std::string(row);
+  sqlite3_finalize(statement);
+  return res;
 }
