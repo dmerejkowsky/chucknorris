@@ -21,8 +21,6 @@ INSERT INTO chucknorris (fact) VALUES
 INSERT INTO chucknorris (fact) VALUES
   ("If Chuck Norris was a Spartan in the movie 300, the movie would be called 1");
 INSERT INTO chucknorris (fact) VALUES
-  ("Chuck Norris will never have a heart attack. His heart isn't nearly foolish enough to attack him.");
-INSERT INTO chucknorris (fact) VALUES
   ("Chuck Norris can kill two stones with one bird.");
 INSERT INTO chucknorris (fact) VALUES
   ("Chuck Norris can slam a revolving door.");
