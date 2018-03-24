@@ -1,6 +1,5 @@
 #pragma once
 
-#define CHUCK_NORRIS_VERSION "0.1"
 
 #ifdef __cplusplus
 extern "C" {
