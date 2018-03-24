@@ -9,9 +9,11 @@ chuck_norris_t* chuck_norris_init()
   return new ChuckNorris();
 }
 
-const char* chuck_norris_get_fact(chuck_norris_t* chuck_norris)
+char* chuck_norris_get_fact(chuck_norris_t* chuck_norris)
 {
-  return strdup(chuck_norris->getFact().c_str());
+  std::string fact = chuck_norris->getFact();
+  char* result = strdup(fact.c_str());
+  return result;
 }
 
 void chuck_norris_deinit(chuck_norris_t* chuck_norris)
