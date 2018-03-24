@@ -12,7 +12,7 @@ class ChucknorrisConan(ConanFile):
     default_options = "shared=False"
     generators = "cmake", "json"
     exports_sources = "CMakeLists.txt", "src/*", "include/*"
-    requires = "sqlite3/3.21.0@dmerej/test"
+    requires = "sqlite3/3.21.0@bincrafters/stable"
 
     def configure(self):
         # TODO: ask theo why
