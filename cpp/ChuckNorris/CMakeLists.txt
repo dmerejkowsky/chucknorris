@@ -15,7 +15,6 @@ add_library(chucknorris
 )
 
 target_link_libraries(chucknorris
-  PRIVATE
     CONAN_PKG::sqlite3
 )
 
