@@ -3,20 +3,28 @@
 
 #include <ChuckNorris.hpp>
 
+struct chuck_norris {
+  ChuckNorris* ck;
+};
 
 chuck_norris_t* chuck_norris_init()
 {
-  return new ChuckNorris();
+  auto ck = new ChuckNorris();
+  return reinterpret_cast<chuck_norris*>(ck);
 }
 
-char* chuck_norris_get_fact(chuck_norris_t* chuck_norris)
+const char* chuck_norris_get_fact(chuck_norris_t* chuck_norris)
 {
-  std::string fact = chuck_norris->getFact();
-  char* result = strdup(fact.c_str());
+  auto ck = reinterpret_cast<ChuckNorris*>(chuck_norris);
+  std::string fact = ck->getFact();
+  const char* result = fact.c_str();
   return result;
+  //const char* result = strdup(fact.c_str());
+  //return result;
 }
 
 void chuck_norris_deinit(chuck_norris_t* chuck_norris)
 {
-  delete chuck_norris;
+  auto ck = reinterpret_cast<ChuckNorris*>(chuck_norris);
+  delete ck;
 }
