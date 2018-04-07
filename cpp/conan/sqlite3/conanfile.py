@@ -35,9 +35,11 @@ class ConanSqlite3(ConanFile):
 
     def build(self):
         cmake = CMake(self)
+
         cmake.definitions["ENABLE_JSON1"] = self.options.enable_json1
+        cmake.verbose = True
         cmake.configure()
-        cmake.build(args=["--", "-v"])
+        cmake.build()
 
     def package(self):
         self.copy("FindSQLite3.cmake", ".", ".")
