@@ -14,6 +14,7 @@ extra_objects.append(libchucknorris_path)
 
 include_dirs = []
 include_dirs.append(cpp_path.joinpath("include"))
+include_dirs.append(cpp_build_path)
 
 libraries = ["stdc++"]
 
