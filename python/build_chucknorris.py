@@ -1,29 +1,35 @@
 import json
-import sys
 
 import path
 from cffi import FFI
 ffibuilder = FFI()
 
 
-cpp_build_path = path.Path("../cpp/build/default").abspath()
-libs = []
+cpp_path = path.Path("../cpp/ChuckNorris").abspath()
+cpp_build_path = cpp_path.joinpath("build/default")
 
+extra_objects = []
 libchucknorris_path = cpp_build_path.joinpath("lib/libchucknorris.a")
-libs.append(libchucknorris_path)
+extra_objects.append(libchucknorris_path)
 
-conan_info = json.loads(cpp_build_path.joinpath("conaninfo.json").text())
+include_dirs = []
+include_dirs.append(cpp_path.joinpath("include"))
+
+libraries = ["stdc++"]
+
+conan_info = json.loads(cpp_build_path.joinpath("conanbuildinfo.json").text())
 for dep in conan_info["dependencies"]:
     for lib_name in dep["libs"]:
         lib_filename = "lib%s.a" % lib_name
         for lib_path in dep["lib_paths"]:
             candidate = path.Path(lib_path).joinpath(lib_filename)
             if candidate.exists():
-                libs.append(candidate)
+                extra_objects.append(candidate)
+            else:
+                libraries.append(lib_name)
+    for include_path in dep["include_paths"]:
+        include_dirs.append(include_path)
 
-additional_libs = list()
-if sys.platform == "linux":
-    additional_libs.append("stdc++")
 
 ffibuilder.set_source(
     "_chucknorris",
@@ -31,15 +37,13 @@ ffibuilder.set_source(
     #include <chucknorris.h>
 
     """,
-    extra_objects=libs,
-    libraries=additional_libs,
-    include_dirs=["../cpp/include"],
+    extra_objects=extra_objects,
+    include_dirs=include_dirs,
+    libraries=libraries,
 )
 
 ffibuilder.cdef("""
-const char* chuck_norris_version(void);
-
-typedef struct ChuckNorris chuck_norris_t;
+typedef struct chuck_norris chuck_norris_t;
 chuck_norris_t* chuck_norris_init(void);
 const char* chuck_norris_get_fact(chuck_norris_t*);
 void chuck_norris_deinit(chuck_norris_t*);
