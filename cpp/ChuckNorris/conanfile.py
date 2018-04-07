@@ -9,10 +9,10 @@ class ChucknorrisConan(ConanFile):
     description = "Chuck Norris does not need a description"
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False]}
-    default_options = "shared=False"
+    default_options = "shared=False", "sqlite3:pic=True"
     generators = "cmake", "json"
     exports_sources = "CMakeLists.txt", "src/*", "include/*"
-    requires = "sqlite3/3.21.0@bincrafters/stable"
+    requires = "sqlite3/3.21.0@dmerej/test"
 
     def configure(self):
         # TODO: ask theo why
