@@ -49,7 +49,3 @@ chuck_norris_t* chuck_norris_init(void);
 const char* chuck_norris_get_fact(chuck_norris_t*);
 void chuck_norris_deinit(chuck_norris_t*);
 """)
-
-
-if __name__ == "__main__":
-    ffibuilder.compile(verbose=True)
