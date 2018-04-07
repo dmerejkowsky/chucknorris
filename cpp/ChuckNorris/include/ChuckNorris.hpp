@@ -1,5 +1,6 @@
 #pragma once
 
+#include "chucknorris_export.h"
 #include <string>
 
 struct sqlite3;
@@ -7,14 +8,14 @@ struct sqlite3;
 class ChuckNorris
 {
   public:
-    ChuckNorris();
+    CHUCKNORRIS_EXPORT ChuckNorris();
     ChuckNorris(ChuckNorris const&) = delete;
     ChuckNorris(ChuckNorris &&) = delete;
     ChuckNorris& operator=(ChuckNorris const&) = delete;
     ChuckNorris& operator=(ChuckNorris &&) = delete;
-    ~ChuckNorris();
+    CHUCKNORRIS_EXPORT ~ChuckNorris();
 
-    std::string getFact();
+    CHUCKNORRIS_EXPORT std::string getFact();
 
 
   private:
