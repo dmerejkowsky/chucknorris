@@ -28,6 +28,20 @@ INSERT INTO chucknorris (fact) VALUES
   ("There are no weapons of mass destruction in Iraq, Chuck Norris lives in Oklahoma.");
 INSERT INTO chucknorris (fact) VALUES
   ("If, by some incredible space-time paradox, Chuck Norris would ever fight himself, he'd win. Period.");
+INSERT INTO chucknorris (fact) VALUES
+  ("Chuck Norris sleeps with a pillow under his gun.");
+INSERT INTO chucknorris (fact) VALUES
+  ("Chuck Norris threw a grenade and killed 50 people, then it exploded.");
+INSERT INTO chucknorris (fact) VALUES
+  ("Chuck Norris counted to infinity. Twice.");
+INSERT INTO chucknorris (fact) VALUES
+  ("Giraffes were created when Chuck Norris uppercutted a horse.");
+INSERT INTO chucknorris (fact) VALUES
+  ("When a zombie apocalypse starts, Chuck Norris doesn't try to survive. The zombies do.");
+INSERT INTO chucknorris (fact) VALUES
+  ("Q: How many Chuck Norris' does it take to change a light bulb?
+
+A.None, Chuck Norris prefers to kill in the dark.");
 )";
 
     char* errorMessage = nullptr;
