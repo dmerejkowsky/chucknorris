@@ -1,6 +1,7 @@
 [requires]
-sqlite3/3.21.0@bincrafters/stable
+sqlite3/3.21.0@dmerej/test
 
 [generators]
+sqlite3:pic = True
 cmake
 json
