@@ -17,15 +17,19 @@ class ConanSqlite3(ConanFile):
     generators = "cmake"
     settings = "os", "compiler", "arch", "build_type"
     exports = ["LICENSE.md"]
-    exports_sources = "CMakeLists.txt", "FindSQLite3.cmake", "test.cpp"
-    options = {"shared": [True, False], "enable_json1": [True, False]}
+    exports_sources = ["CMakeLists.txt", "FindSQLite3.cmake"]
+    options = {
+        "shared": [True, False],
+        "enable_json1": [True, False],
+        "pic": [True, False],
+    }
     default_options = "shared=False", "enable_json1=False"
 
     def configure(self):
         del self.settings.compiler.libcxx
 
     def source(self):
-        base_url = "https://dmerej.info/pub/" + self.year
+        base_url = "https://www.sqlite.org/" + self.year
         archive_name = "sqlite-amalgamation-" + self.version.replace(".","") + "000"
         archive_ext = "zip"
         download_url = "{0}/{1}.{2}".format(base_url, archive_name, archive_ext)
@@ -35,6 +39,10 @@ class ConanSqlite3(ConanFile):
 
     def build(self):
         cmake = CMake(self)
+        if self.options.shared:
+            cmake.definitions["BUILD_SHARED_LIBS"] = "ON"
+        if self.options.pic:
+            cmake.definitions["CMAKE_POSITION_INDEPENDENT_CODE"] = "ON"
 
         cmake.definitions["ENABLE_JSON1"] = self.options.enable_json1
         cmake.verbose = True
