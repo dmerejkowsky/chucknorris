@@ -1,8 +1,6 @@
-
 plugins {
     id 'java-library'
 }
-
 
 dependencies {
     api 'net.java.dev.jna:jna:4.5.1'
@@ -12,8 +10,7 @@ dependencies {
 def thisFile  = new File(project.file('build.gradle').absolutePath)
 def projectPath = thisFile.getParentFile()
 def topPath = projectPath.getParentFile()
-def cppPath = new File(topPath, "cpp")
-def cppBuildPath = new File(cppPath, "build/java/lib")
+def cppBuildPath = new File(topPath, "cpp/ChuckNorris/build/default/lib")
 
 test {
     systemProperty 'jna.library.path', cppBuildPath
