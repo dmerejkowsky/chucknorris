@@ -9,15 +9,10 @@ class ChucknorrisConan(ConanFile):
     description = "Chuck Norris does not need a description"
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False]}
-    default_options = "shared=False", "sqlite3:pic=True"
+    default_options = "shared=False"
     generators = "cmake", "json"
     exports_sources = "CMakeLists.txt", "src/*", "include/*"
     requires = "sqlite3/3.21.0@dmerej/test"
-
-    def configure(self):
-        # TODO: ask theo why
-        # taken fro sqlite3 recipe
-        del self.settings.compiler.libcxx
 
     def build(self):
         cmake = CMake(self)
@@ -28,8 +23,7 @@ class ChucknorrisConan(ConanFile):
         cmake.build(args=["--", "-v"])
 
     def package(self):
-        cmake = CMake(self)
-        cmake.install()
+        self.copy("bin/cpp_demo", dst="bin")
 
     def package_info(self):
         self.cpp_info.libs = ["chucknorris"]
