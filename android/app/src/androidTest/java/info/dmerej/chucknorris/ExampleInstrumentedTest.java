@@ -1,4 +1,4 @@
-package com.chucknorris;
+package info.dmerej.chucknorris;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -9,20 +9,18 @@ import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
 
+/**
+ * Instrumented test, which will execute on an Android device.
+ *
+ * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ */
 @RunWith(AndroidJUnit4.class)
-public class ChuckNorrisInstrumentedTest {
+public class ExampleInstrumentedTest {
     @Test
-    public void useAppContext() throws Exception {
+    public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.chucknorris", appContext.getPackageName());
-    }
-
-    @Test
-    public  void instantiateLib() throws Exception {
-        ChuckNorrisLib lib = new ChuckNorrisLib();
-        String version = lib.getVersion();
-        assertEquals("0.1", version);
+        assertEquals("info.dmerej.chucknorris", appContext.getPackageName());
     }
 }
