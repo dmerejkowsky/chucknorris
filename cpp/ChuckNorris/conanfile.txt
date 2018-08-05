@@ -1,9 +1,0 @@
-[requires]
-sqlite3/3.21.0@dmerej/test
-
-[options]
-sqlite3:pic = True
-
-[generators]
-cmake
-json

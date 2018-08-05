@@ -1,0 +1,15 @@
+[package]
+name = "chucknorris"
+version = "0.1.0"
+authors = ["Dimitri Merejkowsky <d.merej@gmail.com>"]
+
+[dependencies]
+sqlite = "0.23.9"
+libc = "0.2.42"
+
+[build-dependencies]
+cbindgen = "0.6.3"
+
+[lib]
+name = "chucknorris"
+crate-type = ["dylib"]
