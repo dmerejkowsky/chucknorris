@@ -32,5 +32,4 @@ class ChucknorrisConan(ConanFile):
         self.copy("lib/libc++_shared.so", dst="lib", keep_path=False)
 
     def package_info(self):
-        self.cpp_info.libs = ["chucknorris"o
-
+        self.cpp_info.libs = ["chucknorris"]
