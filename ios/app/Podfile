@@ -1,0 +1,5 @@
+platform :ios, '11.4'
+
+target 'ChuckNorris' do
+  pod 'ChuckNorrisBindings', :path => '../bindings/'
+end

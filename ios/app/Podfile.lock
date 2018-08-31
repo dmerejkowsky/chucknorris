@@ -1,0 +1,16 @@
+PODS:
+  - ChuckNorrisBindings (0.1.0)
+
+DEPENDENCIES:
+  - ChuckNorrisBindings (from `../bindings/`)
+
+EXTERNAL SOURCES:
+  ChuckNorrisBindings:
+    :path: ../bindings/
+
+SPEC CHECKSUMS:
+  ChuckNorrisBindings: d691e352d0c1cf7278095fff183a3416a85ee632
+
+PODFILE CHECKSUM: 8523796b094a30bb2735786413afb8cca7d80d7d
+
+COCOAPODS: 1.4.0
