@@ -1,0 +1,6 @@
+framework module ChuckNorrisBindings {
+  umbrella header "ChuckNorrisBindings-umbrella.h"
+
+  export *
+  module * { export * }
+}

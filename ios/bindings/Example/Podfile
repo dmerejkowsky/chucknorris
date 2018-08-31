@@ -1,0 +1,7 @@
+use_frameworks!
+target 'ChuckNorrisBindings_Tests' do
+  pod 'ChuckNorrisBindings', :path => '../'
+  
+  pod 'Specta'
+    pod 'Expecta'
+end

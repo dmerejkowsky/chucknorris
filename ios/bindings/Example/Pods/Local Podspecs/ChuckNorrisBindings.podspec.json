@@ -1,0 +1,22 @@
+{
+  "name": "ChuckNorrisBindings",
+  "version": "0.1.0",
+  "summary": "A short description of ChuckNorrisBindings.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Dimitri Merejkowsky/ChuckNorrisBindings",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Dimitri Merejkowsky": "dimitri.merejkowsky@tanker.io"
+  },
+  "source": {
+    "git": "https://github.com/Dimitri Merejkowsky/ChuckNorrisBindings.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ChuckNorrisBindings/Classes/**/*"
+}

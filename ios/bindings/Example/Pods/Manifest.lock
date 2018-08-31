@@ -1,0 +1,22 @@
+PODS:
+  - ChuckNorrisBindings (0.1.0)
+  - Expecta (1.0.6)
+  - Specta (1.0.7)
+
+DEPENDENCIES:
+  - ChuckNorrisBindings (from `../`)
+  - Expecta
+  - Specta
+
+EXTERNAL SOURCES:
+  ChuckNorrisBindings:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ChuckNorrisBindings: b8a036033fc95bdbab0c490cf65334239ff8a8a3
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+
+PODFILE CHECKSUM: 9a9073072fe245ad071de7bdb3df2022f5a8a6dd
+
+COCOAPODS: 1.4.0
