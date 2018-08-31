@@ -24,12 +24,15 @@ class ChucknorrisConan(ConanFile):
         cmake.build(args=["--", "-v"])
 
     def imports(self):
-        self.copy("*libc++_shared.so", dst="lib", keep_path=False)
+        if self.settings.os == "Android":
+            self.copy("*libc++_shared.so", dst="lib", keep_path=False)
+        if self.settings.os == "iOS":
+            self.copy("*.a", dst="lib", src="lib")
 
     def package(self):
         self.copy("bin/cpp_demo", dst="bin", keep_path=False)
-        self.copy("lib/libchucknorris.so", dst="lib", keep_path=False)
-        self.copy("lib/libc++_shared.so", dst="lib", keep_path=False)
+        self.copy("lib/*.so", dst="lib", keep_path=False)
+        self.copy("lib/*.a", dst="lib", keep_path=False)
 
     def package_info(self):
         self.cpp_info.libs = ["chucknorris"]
