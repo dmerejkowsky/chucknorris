@@ -1,22 +1,29 @@
 {
   "name": "ChuckNorrisBindings",
   "version": "0.1.0",
-  "summary": "A short description of ChuckNorrisBindings.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Dimitri Merejkowsky/ChuckNorrisBindings",
+  "summary": "ChuckNorris as a iOS Objective-C library",
+  "description": null,
+  "homepage": "https://github.com/dmerejkowsky/chucknorris",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Dimitri Merejkowsky": "dimitri.merejkowsky@tanker.io"
+    "Dimitri Merejkowsky": "d.merej@gmail.com"
   },
   "source": {
-    "git": "https://github.com/Dimitri Merejkowsky/ChuckNorrisBindings.git",
+    "git": "https://github.com/dmerejkowsky/chucknorris.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "11.4"
   },
-  "source_files": "ChuckNorrisBindings/Classes/**/*"
+  "source_files": "ChuckNorrisBindings/Classes/**/*",
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "../../../../cpp/ChuckNorris/include/"
+  },
+  "vendored_libraries": [
+    "out/libchucknorris.a",
+    "out/libsqlite3.a"
+  ]
 }
