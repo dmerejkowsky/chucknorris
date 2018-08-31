@@ -14,6 +14,9 @@ class ChuckNorris
     ChuckNorris(ChuckNorris &&) = delete;
     ChuckNorris& operator=(ChuckNorris const&) = delete;
     ChuckNorris& operator=(ChuckNorris &&) = delete;
+
+    CHUCKNORRIS_EXPORT static std::string version();
+
     CHUCKNORRIS_EXPORT ~ChuckNorris();
 
     CHUCKNORRIS_EXPORT std::string getFact();
