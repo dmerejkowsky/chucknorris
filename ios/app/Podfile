@@ -1,0 +1,7 @@
+platform :ios, '11.4'
+
+target 'ChuckNorris' do
+
+  # Pods for ChuckNorris
+
+end
