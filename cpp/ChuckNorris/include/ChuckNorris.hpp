@@ -2,24 +2,21 @@
 
 #include <string>
 
-#include "chucknorris_export.h"
-
 struct sqlite3;
 
 class ChuckNorris
 {
   public:
-    CHUCKNORRIS_EXPORT ChuckNorris();
+    ChuckNorris();
     ChuckNorris(ChuckNorris const&) = delete;
     ChuckNorris(ChuckNorris &&) = delete;
     ChuckNorris& operator=(ChuckNorris const&) = delete;
     ChuckNorris& operator=(ChuckNorris &&) = delete;
 
-    CHUCKNORRIS_EXPORT static std::string version();
+    static std::string version();
 
-    CHUCKNORRIS_EXPORT ~ChuckNorris();
 
-    CHUCKNORRIS_EXPORT std::string getFact();
+    std::string getFact();
 
 
   private:
