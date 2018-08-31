@@ -10,10 +10,10 @@ dependencies {
 def thisFile  = new File(project.file('build.gradle').absolutePath)
 def projectPath = thisFile.getParentFile()
 def topPath = projectPath.getParentFile()
-def cppBuildPath = new File(topPath, "cpp/ChuckNorris/build/default/lib")
+def rustOut = new File(topPath, 'rust/target/debug')
 
 test {
-    systemProperty 'jna.library.path', cppBuildPath
+    systemProperty 'jna.library.path', rustOut
 }
 
 repositories {
