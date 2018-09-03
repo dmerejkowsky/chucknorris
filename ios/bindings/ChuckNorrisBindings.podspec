@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
     'HEADER_SEARCH_PATHS' => '../../../../cpp/ChuckNorris/include/'
   }
 
+  s.libraries = ['c++', 'c++abi']
   s.vendored_libraries = Dir["out/*.a"]
 
 end

@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "CKChuckNorris+Private.h"
 #import "CKChuckNorris.h"
 
 FOUNDATION_EXPORT double ChuckNorrisBindingsVersionNumber;
