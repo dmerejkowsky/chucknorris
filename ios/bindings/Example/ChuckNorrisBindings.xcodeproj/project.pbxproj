@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		234089D45A8D4667A217EF01 /* ChuckNorrisBindings.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ChuckNorrisBindings.podspec; path = ../ChuckNorrisBindings.podspec; sourceTree = "<group>"; };
+		234089D45A8D4667A217EF01 /* ChuckNorrisBindings.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ChuckNorrisBindings.podspec; path = ../ChuckNorrisBindings.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		43DFB9049B2CBF80D572C7B8 /* Pods_ChuckNorrisBindings_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChuckNorrisBindings_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A61C696D2B41C6037382DAD /* Pods-ChuckNorrisBindings_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckNorrisBindings_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChuckNorrisBindings_Tests/Pods-ChuckNorrisBindings_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };

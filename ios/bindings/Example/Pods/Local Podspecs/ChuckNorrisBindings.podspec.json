@@ -25,5 +25,9 @@
   "vendored_libraries": [
     "out/libchucknorris.a",
     "out/libsqlite3.a"
+  ],
+  "libraries": [
+    "c++",
+    "c++abi"
   ]
 }

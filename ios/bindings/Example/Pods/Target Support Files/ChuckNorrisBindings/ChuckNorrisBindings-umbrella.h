@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "CKChuckNorris.h"
 
 FOUNDATION_EXPORT double ChuckNorrisBindingsVersionNumber;
 FOUNDATION_EXPORT const unsigned char ChuckNorrisBindingsVersionString[];
