@@ -22,6 +22,10 @@
   "pod_target_xcconfig": {
     "HEADER_SEARCH_PATHS": "../../../../cpp/ChuckNorris/include/"
   },
+  "libraries": [
+    "c++",
+    "c++abi"
+  ],
   "vendored_libraries": [
     "out/libchucknorris.a",
     "out/libsqlite3.a"
