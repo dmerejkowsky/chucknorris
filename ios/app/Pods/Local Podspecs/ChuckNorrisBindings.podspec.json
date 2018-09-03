@@ -1,0 +1,33 @@
+{
+  "name": "ChuckNorrisBindings",
+  "version": "0.1.0",
+  "summary": "ChuckNorris as a iOS Objective-C library",
+  "description": null,
+  "homepage": "https://github.com/dmerejkowsky/chucknorris",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Dimitri Merejkowsky": "d.merej@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/dmerejkowsky/chucknorris.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.4"
+  },
+  "source_files": "ChuckNorrisBindings/Classes/**/*",
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "../../../../cpp/ChuckNorris/include/"
+  },
+  "libraries": [
+    "c++",
+    "c++abi"
+  ],
+  "vendored_libraries": [
+    "out/libchucknorris.a",
+    "out/libsqlite3.a"
+  ]
+}

@@ -7,35 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1855E11B7C7DFA618C24548629B099C7 /* Pods-ChuckNorris-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A739AA7EF61D53A7E1A0BED6FFB7D57C /* Pods-ChuckNorris-dummy.m */; };
-		2D6FA0B01E14BCE977DDEB3AB4A4386B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2E2C6152CA9AC68762FCB84F28769E97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7074F2433B781C98BC0A390FF8AE1A99 /* Pods-ChuckNorris-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A739AA7EF61D53A7E1A0BED6FFB7D57C /* Pods-ChuckNorris-dummy.m */; };
+		9D15584B202C0E6D3F24ABEDD9F7B178 /* CKChuckNorris.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E86CA6E690202275046871AE08BCFE4 /* CKChuckNorris.m */; };
+		C3F3D464888A675B2B2A38D549505E5C /* ChuckNorrisBindings-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C721FC3BCEF50CC6C4E9FF1071B5E11 /* ChuckNorrisBindings-dummy.m */; };
+		CB262643C612BC640F8E73189EAF03CF /* CKChuckNorris.h in Headers */ = {isa = PBXBuildFile; fileRef = DF1E9582CF087B74813586DE113CB5FE /* CKChuckNorris.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E83215FE722B749199B6470BDA7BBEA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		569330747F891984A64E144F1EC9216C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FAAAEF93B2F850AC8E9327ABB875353;
+			remoteInfo = ChuckNorrisBindings;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03AFFD45426BC8B11AEE3D8844275EA3 /* Pods-ChuckNorris-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChuckNorris-resources.sh"; sourceTree = "<group>"; };
 		06F396A8C2D718E2EB149F7B8818100F /* Pods-ChuckNorris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChuckNorris.debug.xcconfig"; sourceTree = "<group>"; };
+		10F26E1C5C68ED2321E0D31E157704B8 /* ChuckNorrisBindings.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ChuckNorrisBindings.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1E2B17326DA1D9AD14C48AC0531F9279 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		3F63B59A092A35231B6228D7E571E13B /* Pods-ChuckNorris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChuckNorris.release.xcconfig"; sourceTree = "<group>"; };
 		43B31590FD87A7998281D612A3A1F339 /* Pods-ChuckNorris-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChuckNorris-frameworks.sh"; sourceTree = "<group>"; };
+		4E86CA6E690202275046871AE08BCFE4 /* CKChuckNorris.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKChuckNorris.m; path = ChuckNorrisBindings/Classes/CKChuckNorris.m; sourceTree = "<group>"; };
 		543240AB43AF28B64D8EF117D8D73029 /* Pods-ChuckNorris-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChuckNorris-acknowledgements.plist"; sourceTree = "<group>"; };
+		5C721FC3BCEF50CC6C4E9FF1071B5E11 /* ChuckNorrisBindings-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChuckNorrisBindings-dummy.m"; sourceTree = "<group>"; };
+		5E6CF9A03DE3355947E21B8F5F4DC3D5 /* ChuckNorrisBindings-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChuckNorrisBindings-prefix.pch"; sourceTree = "<group>"; };
+		6576852F4DF86673C2185E78838BB53F /* libChuckNorrisBindings.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libChuckNorrisBindings.a; path = libChuckNorrisBindings.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7B7597DE89F147CD1A224472DE8AB6F7 /* libPods-ChuckNorris.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ChuckNorris.a"; path = "libPods-ChuckNorris.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DF41BDD54DBD0D1E9FD07BFEB55E2EF /* libchucknorris.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libchucknorris.a; path = out/libchucknorris.a; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A739AA7EF61D53A7E1A0BED6FFB7D57C /* Pods-ChuckNorris-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChuckNorris-dummy.m"; sourceTree = "<group>"; };
 		CBF0AD874AAFB5344155D0A2CCF14A27 /* Pods-ChuckNorris-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChuckNorris-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D7BC2DBF244A04EB4ABB5E73A3959606 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DF1E9582CF087B74813586DE113CB5FE /* CKChuckNorris.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKChuckNorris.h; path = ChuckNorrisBindings/Classes/CKChuckNorris.h; sourceTree = "<group>"; };
+		F4BB9C4E2E3C8504F211DB0213242809 /* libPods-ChuckNorris.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ChuckNorris.a"; path = "libPods-ChuckNorris.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F96DCB5F0B28907CA8F50341E2253792 /* libsqlite3.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libsqlite3.a; path = out/libsqlite3.a; sourceTree = "<group>"; };
+		FAC90AE75B726A77672910F7586B9E23 /* ChuckNorrisBindings.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChuckNorrisBindings.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FB9450E0E925D5DCBBCA51B52A80D240 /* Frameworks */ = {
+		27F704ABB9FC81821C7803E43CE0116F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D6FA0B01E14BCE977DDEB3AB4A4386B /* Foundation.framework in Frameworks */,
+				2E2C6152CA9AC68762FCB84F28769E97 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0A35268D5571887656322FABFC08EE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E83215FE722B749199B6470BDA7BBEA1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24C652309C599B33287DE7A1CBC430A1 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				10F26E1C5C68ED2321E0D31E157704B8 /* ChuckNorrisBindings.podspec */,
+				1E2B17326DA1D9AD14C48AC0531F9279 /* LICENSE */,
+				D7BC2DBF244A04EB4ABB5E73A3959606 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		65C4FE48C8A24F442CB708B9EC8D0519 /* Pods-ChuckNorris */ = {
 			isa = PBXGroup;
 			children = (
@@ -55,18 +98,29 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				CF94A9295BBBB30C25175FAFFC13A99B /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				7ED7AD174F9EE2C553A8F366677EBF5F /* Products */,
+				89CEBB2A67AC3CCE97BED6F89CF2404E /* Products */,
 				987DC09278B00F27FA249799579B6E6E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7ED7AD174F9EE2C553A8F366677EBF5F /* Products */ = {
+		89CEBB2A67AC3CCE97BED6F89CF2404E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B7597DE89F147CD1A224472DE8AB6F7 /* libPods-ChuckNorris.a */,
+				6576852F4DF86673C2185E78838BB53F /* libChuckNorrisBindings.a */,
+				F4BB9C4E2E3C8504F211DB0213242809 /* libPods-ChuckNorris.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8C9E3901374D279AC730AED23B1DDDB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DF41BDD54DBD0D1E9FD07BFEB55E2EF /* libchucknorris.a */,
+				F96DCB5F0B28907CA8F50341E2253792 /* libsqlite3.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		987DC09278B00F27FA249799579B6E6E /* Targets Support Files */ = {
@@ -85,6 +139,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CF94A9295BBBB30C25175FAFFC13A99B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3D287A5F5147F6E0C0A4C223D336523 /* ChuckNorrisBindings */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,23 +155,76 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		EA91B27009E3A8A0B5C3A56B58381059 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAC90AE75B726A77672910F7586B9E23 /* ChuckNorrisBindings.xcconfig */,
+				5C721FC3BCEF50CC6C4E9FF1071B5E11 /* ChuckNorrisBindings-dummy.m */,
+				5E6CF9A03DE3355947E21B8F5F4DC3D5 /* ChuckNorrisBindings-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../app/Pods/Target Support Files/ChuckNorrisBindings";
+			sourceTree = "<group>";
+		};
+		F3D287A5F5147F6E0C0A4C223D336523 /* ChuckNorrisBindings */ = {
+			isa = PBXGroup;
+			children = (
+				DF1E9582CF087B74813586DE113CB5FE /* CKChuckNorris.h */,
+				4E86CA6E690202275046871AE08BCFE4 /* CKChuckNorris.m */,
+				8C9E3901374D279AC730AED23B1DDDB6 /* Frameworks */,
+				24C652309C599B33287DE7A1CBC430A1 /* Pod */,
+				EA91B27009E3A8A0B5C3A56B58381059 /* Support Files */,
+			);
+			name = ChuckNorrisBindings;
+			path = ../../bindings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		251EEBB3C60815525BACD4E1BACDDABD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB262643C612BC640F8E73189EAF03CF /* CKChuckNorris.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		F6CAEBD6FCBC159A85822D96AF4DB9EE /* Pods-ChuckNorris */ = {
+		05AD84F09412341DC1E8C1F0EC8E9A8A /* Pods-ChuckNorris */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 333B47273C513FAB6F4BBFD296E3451C /* Build configuration list for PBXNativeTarget "Pods-ChuckNorris" */;
+			buildConfigurationList = BAD3C8056CC0DD6B063B734191CB6381 /* Build configuration list for PBXNativeTarget "Pods-ChuckNorris" */;
 			buildPhases = (
-				1B963B2D9C6C7C35E521323CF0B7EB86 /* Sources */,
-				FB9450E0E925D5DCBBCA51B52A80D240 /* Frameworks */,
+				91606E5A32B07154C0F739AD9829F73B /* Sources */,
+				27F704ABB9FC81821C7803E43CE0116F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91407B8D8E0B2CEBF52B0F5FD84475BA /* PBXTargetDependency */,
+			);
+			name = "Pods-ChuckNorris";
+			productName = "Pods-ChuckNorris";
+			productReference = F4BB9C4E2E3C8504F211DB0213242809 /* libPods-ChuckNorris.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7FAAAEF93B2F850AC8E9327ABB875353 /* ChuckNorrisBindings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C49221A3148A3958030C5DC49E8E2CD /* Build configuration list for PBXNativeTarget "ChuckNorrisBindings" */;
+			buildPhases = (
+				EF3689426F3E73245012A48D95219D27 /* Sources */,
+				D0A35268D5571887656322FABFC08EE7 /* Frameworks */,
+				251EEBB3C60815525BACD4E1BACDDABD /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-ChuckNorris";
-			productName = "Pods-ChuckNorris";
-			productReference = 7B7597DE89F147CD1A224472DE8AB6F7 /* libPods-ChuckNorris.a */;
+			name = ChuckNorrisBindings;
+			productName = ChuckNorrisBindings;
+			productReference = 6576852F4DF86673C2185E78838BB53F /* libChuckNorrisBindings.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -129,25 +244,44 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7ED7AD174F9EE2C553A8F366677EBF5F /* Products */;
+			productRefGroup = 89CEBB2A67AC3CCE97BED6F89CF2404E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F6CAEBD6FCBC159A85822D96AF4DB9EE /* Pods-ChuckNorris */,
+				7FAAAEF93B2F850AC8E9327ABB875353 /* ChuckNorrisBindings */,
+				05AD84F09412341DC1E8C1F0EC8E9A8A /* Pods-ChuckNorris */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1B963B2D9C6C7C35E521323CF0B7EB86 /* Sources */ = {
+		91606E5A32B07154C0F739AD9829F73B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1855E11B7C7DFA618C24548629B099C7 /* Pods-ChuckNorris-dummy.m in Sources */,
+				7074F2433B781C98BC0A390FF8AE1A99 /* Pods-ChuckNorris-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF3689426F3E73245012A48D95219D27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F3D464888A675B2B2A38D549505E5C /* ChuckNorrisBindings-dummy.m in Sources */,
+				9D15584B202C0E6D3F24ABEDD9F7B178 /* CKChuckNorris.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91407B8D8E0B2CEBF52B0F5FD84475BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ChuckNorrisBindings;
+			target = 7FAAAEF93B2F850AC8E9327ABB875353 /* ChuckNorrisBindings */;
+			targetProxy = 569330747F891984A64E144F1EC9216C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		00A06BEB3987B2117D563D0D7CF7ACC1 /* Release */ = {
@@ -208,7 +342,74 @@
 			};
 			name = Release;
 		};
-		06FC97F7D58534686118A4244227C938 /* Debug */ = {
+		45A3C05919970CB2C2F32281007EB895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F63B59A092A35231B6228D7E571E13B /* Pods-ChuckNorris.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		599218B794989CF329FA56EAD030F6D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAC90AE75B726A77672910F7586B9E23 /* ChuckNorrisBindings.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ChuckNorrisBindings/ChuckNorrisBindings-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBEB347317C7D82111327550E97FFD52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAC90AE75B726A77672910F7586B9E23 /* ChuckNorrisBindings.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ChuckNorrisBindings/ChuckNorrisBindings-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB6402BC39B1CDE7FCDA447374F320C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 06F396A8C2D718E2EB149F7B8818100F /* Pods-ChuckNorris.debug.xcconfig */;
 			buildSettings = {
@@ -292,28 +493,6 @@
 			};
 			name = Debug;
 		};
-		EA9E31BD621E451388F025151E25A928 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F63B59A092A35231B6228D7E571E13B /* Pods-ChuckNorris.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -326,11 +505,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		333B47273C513FAB6F4BBFD296E3451C /* Build configuration list for PBXNativeTarget "Pods-ChuckNorris" */ = {
+		5C49221A3148A3958030C5DC49E8E2CD /* Build configuration list for PBXNativeTarget "ChuckNorrisBindings" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				06FC97F7D58534686118A4244227C938 /* Debug */,
-				EA9E31BD621E451388F025151E25A928 /* Release */,
+				599218B794989CF329FA56EAD030F6D6 /* Debug */,
+				BBEB347317C7D82111327550E97FFD52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAD3C8056CC0DD6B063B734191CB6381 /* Build configuration list for PBXNativeTarget "Pods-ChuckNorris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6402BC39B1CDE7FCDA447374F320C8 /* Debug */,
+				45A3C05919970CB2C2F32281007EB895 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

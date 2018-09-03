@@ -17,12 +17,12 @@
 @implementation ViewController
 
 - (IBAction)onClick:(id)sender {
-  self.textView.text = @"hello";
+  self.textView.text = [self.ck getFact];
 }
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  // Do any additional setup after loading the view, typically from a nib.
+  self.ck = [[CKChuckNorris alloc] init];
 }
 
 

@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CKChuckNorris.h"
 
 @interface ViewController : UIViewController
 
+@property CKChuckNorris* ck;
 
 @end
 
