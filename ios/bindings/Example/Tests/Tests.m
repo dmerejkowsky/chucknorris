@@ -8,12 +8,14 @@
 
 // https://github.com/Specta/Specta
 
+#import "CKChuckNorris.h"
+
 SpecBegin(ChuckNorris)
 
 describe(@"ChuckNorris", ^{
 
     it(@"can get version", ^{
-      expect(@"0.1").to.equal(@"0.1");
+      expect([CKChuckNorris versionString]).to.equal(@"0.1");
     });
 });
 
