@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ChuckNorrisBindings: 07629f883d000714e6318f51ad5355816313e6bc
+  ChuckNorrisBindings: 5ce583f69c839676a89bd2ca9992ae225cdbce89
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 

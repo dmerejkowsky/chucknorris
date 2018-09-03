@@ -11,9 +11,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.4'
 
   s.source_files = 'ChuckNorrisBindings/Classes/**/*'
+  s.private_header_files = 'ChuckNorrisBindings/Classes/**/*+Private.h'
 
   s.pod_target_xcconfig = {
-    'HEADER_SEARCH_PATHS' => '../../../../cpp/ChuckNorris/include/'
+    'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/../../../cpp/ChuckNorris/include/",
   }
 
   s.libraries = ['c++', 'c++abi']

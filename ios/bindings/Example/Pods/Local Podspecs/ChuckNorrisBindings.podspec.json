@@ -19,6 +19,7 @@
     "ios": "11.4"
   },
   "source_files": "ChuckNorrisBindings/Classes/**/*",
+  "private_header_files": "ChuckNorrisBindings/Classes/**/*+Private.h",
   "pod_target_xcconfig": {
     "HEADER_SEARCH_PATHS": "../../../../cpp/ChuckNorris/include/"
   },

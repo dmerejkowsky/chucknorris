@@ -1,6 +1,6 @@
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/ChuckNorrisBindings
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/ChuckNorrisBindings" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ChuckNorrisBindings" ../../../../cpp/ChuckNorris/include/
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/ChuckNorrisBindings" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ChuckNorrisBindings" ${PODS_ROOT}/../../../cpp/ChuckNorris/include/
 LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../bindings/out"
 OTHER_LDFLAGS = -l"c++" -l"c++abi" -l"chucknorris" -l"sqlite3"
 PODS_BUILD_DIR = ${BUILD_DIR}

@@ -1,21 +1,20 @@
 #import "CKChuckNorris.h"
-#include "chucknorris.h"
+#include "CKChuckNorris+Private.m"
 
 @implementation CKChuckNorris
 
 -(instancetype)init {
   self = [super init];
-  self.ckPtr = chuck_norris_init();
-  return self;
+  return [self createCkPtr];
 }
 
 -(NSString *)getFact {
-  const char* fact = chuck_norris_get_fact(self.ckPtr);
-  return [NSString stringWithCString:fact encoding:NSUTF8StringEncoding];
+  return [self getFactImpl];
+
 }
 
 + (NSString*)versionString {
-  return [NSString stringWithCString:chuck_norris_version() encoding:NSUTF8StringEncoding];
+  return [self versionStringImpl];
 }
-@end
 
+@end
