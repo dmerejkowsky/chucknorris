@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
   }
 
   s.libraries = ['c++', 'c++abi']
-  s.vendored_libraries = Dir["out/*.a"]
+  s.vendored_libraries = Dir["nativelibs/x86_64/*.a"]
 
 end
