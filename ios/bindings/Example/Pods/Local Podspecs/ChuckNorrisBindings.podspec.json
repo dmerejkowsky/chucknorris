@@ -21,14 +21,14 @@
   "source_files": "ChuckNorrisBindings/Classes/**/*",
   "private_header_files": "ChuckNorrisBindings/Classes/**/*+Private.h",
   "pod_target_xcconfig": {
-    "HEADER_SEARCH_PATHS": "../../../../cpp/ChuckNorris/include/"
+    "HEADER_SEARCH_PATHS": "../../../../cpp/ChuckNorris/include"
   },
   "libraries": [
     "c++",
     "c++abi"
   ],
   "vendored_libraries": [
-    "out/libchucknorris.a",
-    "out/libsqlite3.a"
+    "nativelibs/x86_64/libchucknorris.a",
+    "nativelibs/x86_64/libsqlite3.a"
   ]
 }

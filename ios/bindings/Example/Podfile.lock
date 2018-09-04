@@ -8,15 +8,20 @@ DEPENDENCIES:
   - Expecta
   - Specta
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Expecta
+    - Specta
+
 EXTERNAL SOURCES:
   ChuckNorrisBindings:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  ChuckNorrisBindings: 5ce583f69c839676a89bd2ca9992ae225cdbce89
+  ChuckNorrisBindings: d317cea00528bf13923d0b942b43f5d5f7ac2239
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
 PODFILE CHECKSUM: 5b9f1b9c6855eb8f33bd3a3c357b8cb27a7b4e63
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

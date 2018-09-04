@@ -129,7 +129,6 @@
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
 				174253A4FB12E9796F38372C /* [CP] Embed Pods Frameworks */,
-				772514E51B044222DD33F951 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,21 +199,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChuckNorrisBindings_Tests/Pods-ChuckNorrisBindings_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		772514E51B044222DD33F951 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChuckNorrisBindings_Tests/Pods-ChuckNorrisBindings_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CDBCA89E88BCAF7A3B8E1F12 /* [CP] Check Pods Manifest.lock */ = {
