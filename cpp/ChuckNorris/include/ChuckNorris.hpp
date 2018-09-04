@@ -8,6 +8,7 @@ class ChuckNorris
 {
   public:
     ChuckNorris();
+    virtual ~ChuckNorris();
     ChuckNorris(ChuckNorris const&) = delete;
     ChuckNorris(ChuckNorris &&) = delete;
     ChuckNorris& operator=(ChuckNorris const&) = delete;
