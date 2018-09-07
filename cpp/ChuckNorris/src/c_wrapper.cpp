@@ -7,6 +7,12 @@ struct chuck_norris {
   ChuckNorris* ck;
 };
 
+char* chuck_norris_version(void) {
+  std::string version = ChuckNorris::version();
+  char* result = strdup(version.c_str());
+  return result;
+}
+
 chuck_norris_t* chuck_norris_init()
 {
   auto ck = new ChuckNorris();

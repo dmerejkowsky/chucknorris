@@ -52,6 +52,10 @@ A.None, Chuck Norris prefers to kill in the dark.");
 }
 }
 
+std::string ChuckNorris::version() {
+  return "0.1";
+}
+
 ChuckNorris::ChuckNorris()
 {
   sqlite3_open(":memory:", &_db);
