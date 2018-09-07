@@ -21,7 +21,6 @@ class ConanSqlite3(ConanFile):
     options = {
         "shared": [True, False],
         "enable_json1": [True, False],
-        "pic": [True, False],
     }
     default_options = "shared=False", "enable_json1=False"
 
@@ -39,10 +38,9 @@ class ConanSqlite3(ConanFile):
 
     def build(self):
         cmake = CMake(self)
+        cmake.definitions["CMAKE_POSITION_INDEPENDENT_CODE"] = "ON"
         if self.options.shared:
             cmake.definitions["BUILD_SHARED_LIBS"] = "ON"
-        if self.options.pic:
-            cmake.definitions["CMAKE_POSITION_INDEPENDENT_CODE"] = "ON"
 
         cmake.definitions["ENABLE_JSON1"] = self.options.enable_json1
         cmake.verbose = True
