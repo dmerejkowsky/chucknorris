@@ -34,13 +34,12 @@
 		3F63B59A092A35231B6228D7E571E13B /* Pods-ChuckNorris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChuckNorris.release.xcconfig"; sourceTree = "<group>"; };
 		43B31590FD87A7998281D612A3A1F339 /* Pods-ChuckNorris-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChuckNorris-frameworks.sh"; sourceTree = "<group>"; };
 		491553936F76B62AFC1CD98B4AB78486 /* ChuckNorrisBindings.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ChuckNorrisBindings.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		4B0E7A7AB9329BC9FBD60762AA7C7F57 /* libchucknorris.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libchucknorris.a; path = nativelibs/x86_64/libchucknorris.a; sourceTree = "<group>"; };
 		543240AB43AF28B64D8EF117D8D73029 /* Pods-ChuckNorris-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChuckNorris-acknowledgements.plist"; sourceTree = "<group>"; };
 		5C3AA38D5B7812F91A3C243F3AF4093C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		5D8BE8EDDED0EAE767298ABB40EB91AC /* CKChuckNorris+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CKChuckNorris+Private.h"; path = "ChuckNorrisBindings/Classes/CKChuckNorris+Private.h"; sourceTree = "<group>"; };
 		6576852F4DF86673C2185E78838BB53F /* libChuckNorrisBindings.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libChuckNorrisBindings.a; path = libChuckNorrisBindings.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7C6D73C8B37259BFD6E06E2BE4F4776F /* libsqlite3.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libsqlite3.a; path = nativelibs/x86_64/libsqlite3.a; sourceTree = "<group>"; };
+		6A485CD505B38912669D46083EBC9726 /* libchucknorris.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libchucknorris.a; path = nativelibs/universal/libchucknorris.a; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		99F68BD64A7CC602C17E7E664E8673BF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		A739AA7EF61D53A7E1A0BED6FFB7D57C /* Pods-ChuckNorris-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChuckNorris-dummy.m"; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		C0D15926B9DF7FE691FE7E01A78BAC8C /* CKChuckNorris.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKChuckNorris.h; path = ChuckNorrisBindings/Classes/CKChuckNorris.h; sourceTree = "<group>"; };
 		CBF0AD874AAFB5344155D0A2CCF14A27 /* Pods-ChuckNorris-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChuckNorris-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D8016DE12B524714B097ADC7182BFFA3 /* ChuckNorrisBindings.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChuckNorrisBindings.xcconfig; sourceTree = "<group>"; };
+		EE36DEE184ADCED75EBF2FCF7DFF5E45 /* libqlite3.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libqlite3.a; path = nativelibs/universal/libqlite3.a; sourceTree = "<group>"; };
 		F4BB9C4E2E3C8504F211DB0213242809 /* libPods-ChuckNorris.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ChuckNorris.a"; path = "libPods-ChuckNorris.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE9A5C4148E0C0B7E8203AF0B4531ED /* ChuckNorrisBindings-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChuckNorrisBindings-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,7 +98,7 @@
 				BF26F11264A3413E2D596A9BF6E78956 /* CKChuckNorris.m */,
 				5D8BE8EDDED0EAE767298ABB40EB91AC /* CKChuckNorris+Private.h */,
 				05C2CE39D391BA8A7E06958F774AC84D /* CKChuckNorris+Private.m */,
-				A18072CEAA94A12023DCE08B0ADC3327 /* Frameworks */,
+				B8FE2D721070797692D76F0141E06AA7 /* Frameworks */,
 				2E109F8D03B9E744DB58F5804EB83E6E /* Pod */,
 				88BE648A5E96BA500320B15E4C7156D1 /* Support Files */,
 			);
@@ -160,11 +160,11 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		A18072CEAA94A12023DCE08B0ADC3327 /* Frameworks */ = {
+		B8FE2D721070797692D76F0141E06AA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4B0E7A7AB9329BC9FBD60762AA7C7F57 /* libchucknorris.a */,
-				7C6D73C8B37259BFD6E06E2BE4F4776F /* libsqlite3.a */,
+				6A485CD505B38912669D46083EBC9726 /* libchucknorris.a */,
+				EE36DEE184ADCED75EBF2FCF7DFF5E45 /* libqlite3.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

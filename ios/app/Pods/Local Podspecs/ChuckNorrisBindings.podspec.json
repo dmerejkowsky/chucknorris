@@ -28,7 +28,7 @@
     "c++abi"
   ],
   "vendored_libraries": [
-    "nativelibs/x86_64/libchucknorris.a",
-    "nativelibs/x86_64/libsqlite3.a"
+    "nativelibs/universal/libchucknorris.a",
+    "nativelibs/universal/libqlite3.a"
   ]
 }
