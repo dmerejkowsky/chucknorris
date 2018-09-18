@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../bindings/
 
 SPEC CHECKSUMS:
-  ChuckNorrisBindings: dee0645185bd205223c9f72588d87c3e6cdc99aa
+  ChuckNorrisBindings: 44a5f2adee4c0307f354609dc33afacfe6a530a1
 
 PODFILE CHECKSUM: 8523796b094a30bb2735786413afb8cca7d80d7d
 

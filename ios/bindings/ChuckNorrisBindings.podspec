@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.private_header_files = 'ChuckNorrisBindings/Classes/**/*+Private.h'
 
   s.pod_target_xcconfig = {
-    'HEADER_SEARCH_PATHS' => '../../../../cpp/ChuckNorris/include'
+    'HEADER_SEARCH_PATHS' => '../../bindings/nativelibs/include'
   }
 
   s.libraries = ['c++', 'c++abi']
