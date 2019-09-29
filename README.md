@@ -8,7 +8,7 @@ It also contains:
   * `C`
   * `Java`  (with `jna`)
   * `Python3` (with `cffi`)
-  * `Swift`
+  * `Objctive-C`
 
 * an Android application
 * an iOS application
