@@ -1,6 +1,6 @@
 # ChuckNorris
 
-*Note: I've spend quite a long time in my programming career thinking about C++ compilation, and it's a topic I no longer have interest in. As such, the code here, like the accompanying blog posts, are now read-only and probably will get out-of-date one day. Sorry about that.*
+*Note: I've spend quite a long time in my programming career thinking about C++ compilation, and it's a topic I no longer have interest in. As such, the code here, like the accompanying blog posts, are now read-only and probably will get out-of-date one day. Sorry about that, but I thought you ought to know.*
 
 This repository contains a library written in `c++` that depends on `sqlite3`
 
